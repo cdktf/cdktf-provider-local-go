@@ -185,6 +185,9 @@ func (j *jsiiProxy_LocalProvider) TerraformResourceType() *string {
 func NewLocalProvider(scope constructs.Construct, id *string, config *LocalProviderConfig) LocalProvider {
 	_init_.Initialize()
 
+	if err := validateNewLocalProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LocalProvider{}
 
 	_jsii_.Create(
@@ -207,7 +210,7 @@ func NewLocalProvider_Override(l LocalProvider, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_LocalProvider) SetAlias(val *string) {
+func (j *jsiiProxy_LocalProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -235,6 +238,9 @@ func (j *jsiiProxy_LocalProvider) SetAlias(val *string) {
 func LocalProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateLocalProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -259,6 +265,9 @@ func LocalProvider_TfResourceType() *string {
 }
 
 func (l *jsiiProxy_LocalProvider) AddOverride(path *string, value interface{}) {
+	if err := l.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"addOverride",
@@ -267,6 +276,9 @@ func (l *jsiiProxy_LocalProvider) AddOverride(path *string, value interface{}) {
 }
 
 func (l *jsiiProxy_LocalProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := l.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		l,
 		"overrideLogicalId",

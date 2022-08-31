@@ -434,6 +434,9 @@ func (j *jsiiProxy_SensitiveFile) TerraformResourceType() *string {
 func NewSensitiveFile(scope constructs.Construct, id *string, config *SensitiveFileConfig) SensitiveFile {
 	_init_.Initialize()
 
+	if err := validateNewSensitiveFileParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SensitiveFile{}
 
 	_jsii_.Create(
@@ -456,7 +459,10 @@ func NewSensitiveFile_Override(s SensitiveFile, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetConnection(val interface{}) {
+func (j *jsiiProxy_SensitiveFile)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -464,7 +470,10 @@ func (j *jsiiProxy_SensitiveFile) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetContent(val *string) {
+func (j *jsiiProxy_SensitiveFile)SetContent(val *string) {
+	if err := j.validateSetContentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"content",
@@ -472,7 +481,10 @@ func (j *jsiiProxy_SensitiveFile) SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetContentBase64(val *string) {
+func (j *jsiiProxy_SensitiveFile)SetContentBase64(val *string) {
+	if err := j.validateSetContentBase64Parameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentBase64",
@@ -480,7 +492,7 @@ func (j *jsiiProxy_SensitiveFile) SetContentBase64(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetCount(val *float64) {
+func (j *jsiiProxy_SensitiveFile)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -488,7 +500,7 @@ func (j *jsiiProxy_SensitiveFile) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SensitiveFile)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -496,7 +508,10 @@ func (j *jsiiProxy_SensitiveFile) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetDirectoryPermission(val *string) {
+func (j *jsiiProxy_SensitiveFile)SetDirectoryPermission(val *string) {
+	if err := j.validateSetDirectoryPermissionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"directoryPermission",
@@ -504,7 +519,10 @@ func (j *jsiiProxy_SensitiveFile) SetDirectoryPermission(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetFilename(val *string) {
+func (j *jsiiProxy_SensitiveFile)SetFilename(val *string) {
+	if err := j.validateSetFilenameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"filename",
@@ -512,7 +530,10 @@ func (j *jsiiProxy_SensitiveFile) SetFilename(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetFilePermission(val *string) {
+func (j *jsiiProxy_SensitiveFile)SetFilePermission(val *string) {
+	if err := j.validateSetFilePermissionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"filePermission",
@@ -520,7 +541,7 @@ func (j *jsiiProxy_SensitiveFile) SetFilePermission(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SensitiveFile)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -528,7 +549,10 @@ func (j *jsiiProxy_SensitiveFile) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetId(val *string) {
+func (j *jsiiProxy_SensitiveFile)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -536,7 +560,10 @@ func (j *jsiiProxy_SensitiveFile) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SensitiveFile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -544,7 +571,7 @@ func (j *jsiiProxy_SensitiveFile) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SensitiveFile)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -552,7 +579,10 @@ func (j *jsiiProxy_SensitiveFile) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SensitiveFile)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -560,7 +590,10 @@ func (j *jsiiProxy_SensitiveFile) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile) SetSource(val *string) {
+func (j *jsiiProxy_SensitiveFile)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"source",
@@ -588,6 +621,9 @@ func (j *jsiiProxy_SensitiveFile) SetSource(val *string) {
 func SensitiveFile_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSensitiveFile_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -612,6 +648,9 @@ func SensitiveFile_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SensitiveFile) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -620,6 +659,9 @@ func (s *jsiiProxy_SensitiveFile) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_SensitiveFile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -633,6 +675,9 @@ func (s *jsiiProxy_SensitiveFile) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SensitiveFile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -646,6 +691,9 @@ func (s *jsiiProxy_SensitiveFile) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (s *jsiiProxy_SensitiveFile) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -659,6 +707,9 @@ func (s *jsiiProxy_SensitiveFile) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_SensitiveFile) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -672,6 +723,9 @@ func (s *jsiiProxy_SensitiveFile) GetListAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_SensitiveFile) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -685,6 +739,9 @@ func (s *jsiiProxy_SensitiveFile) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SensitiveFile) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -698,6 +755,9 @@ func (s *jsiiProxy_SensitiveFile) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (s *jsiiProxy_SensitiveFile) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -711,6 +771,9 @@ func (s *jsiiProxy_SensitiveFile) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_SensitiveFile) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -724,6 +787,9 @@ func (s *jsiiProxy_SensitiveFile) GetStringAttribute(terraformAttribute *string)
 }
 
 func (s *jsiiProxy_SensitiveFile) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -737,6 +803,9 @@ func (s *jsiiProxy_SensitiveFile) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_SensitiveFile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -750,6 +819,9 @@ func (s *jsiiProxy_SensitiveFile) InterpolationForAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_SensitiveFile) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
