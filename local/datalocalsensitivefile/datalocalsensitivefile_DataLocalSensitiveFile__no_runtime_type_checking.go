@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datalocalsensitivefile
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataLocalSensitiveFile) validateOverrideLogicalIdParameters(n
 }
 
 func validateDataLocalSensitiveFile_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataLocalSensitiveFile_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataLocalSensitiveFile_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

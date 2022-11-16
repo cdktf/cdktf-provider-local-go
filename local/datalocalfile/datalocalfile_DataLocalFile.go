@@ -2,10 +2,10 @@ package datalocalfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-local-go/local/v3/datalocalfile/internal"
+	"github.com/cdktf/cdktf-provider-local-go/local/v4/datalocalfile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -425,6 +425,44 @@ func DataLocalFile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataLocalFile_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataLocalFile_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataLocalFile_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataLocalFile_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)
