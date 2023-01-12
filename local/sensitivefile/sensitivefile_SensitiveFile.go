@@ -52,8 +52,6 @@ type SensitiveFile interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -108,7 +106,6 @@ type SensitiveFile interface {
 	ResetContentBase64()
 	ResetDirectoryPermission()
 	ResetFilePermission()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -313,16 +310,6 @@ func (j *jsiiProxy_SensitiveFile) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SensitiveFile) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -544,17 +531,6 @@ func (j *jsiiProxy_SensitiveFile)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SensitiveFile)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -894,14 +870,6 @@ func (s *jsiiProxy_SensitiveFile) ResetFilePermission() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetFilePermission",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SensitiveFile) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
 		nil, // no parameters
 	)
 }

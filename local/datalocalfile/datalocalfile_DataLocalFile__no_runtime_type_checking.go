@@ -68,10 +68,6 @@ func (j *jsiiProxy_DataLocalFile) validateSetFilenameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_DataLocalFile) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataLocalFile) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
