@@ -1,16 +1,16 @@
-package datalocalfile
+package datalocalsensitivefile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalfile/internal"
+	"github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalsensitivefile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/local/d/file local_file}.
-type DataLocalFile interface {
+// Represents a {@link https://www.terraform.io/docs/providers/local/d/sensitive_file local_sensitive_file}.
+type DataLocalSensitiveFile interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -18,6 +18,12 @@ type DataLocalFile interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	Content() *string
 	ContentBase64() *string
+	ContentBase64Sha256() *string
+	ContentBase64Sha512() *string
+	ContentMd5() *string
+	ContentSha1() *string
+	ContentSha256() *string
+	ContentSha512() *string
 	// Experimental.
 	Count() *float64
 	// Experimental.
@@ -94,12 +100,12 @@ type DataLocalFile interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for DataLocalFile
-type jsiiProxy_DataLocalFile struct {
+// The jsii proxy struct for DataLocalSensitiveFile
+type jsiiProxy_DataLocalSensitiveFile struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataLocalFile) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_DataLocalSensitiveFile) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -109,7 +115,7 @@ func (j *jsiiProxy_DataLocalFile) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_DataLocalSensitiveFile) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -119,7 +125,7 @@ func (j *jsiiProxy_DataLocalFile) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) Content() *string {
+func (j *jsiiProxy_DataLocalSensitiveFile) Content() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -129,7 +135,7 @@ func (j *jsiiProxy_DataLocalFile) Content() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) ContentBase64() *string {
+func (j *jsiiProxy_DataLocalSensitiveFile) ContentBase64() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -139,7 +145,67 @@ func (j *jsiiProxy_DataLocalFile) ContentBase64() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) Count() *float64 {
+func (j *jsiiProxy_DataLocalSensitiveFile) ContentBase64Sha256() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentBase64Sha256",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLocalSensitiveFile) ContentBase64Sha512() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentBase64Sha512",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLocalSensitiveFile) ContentMd5() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentMd5",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLocalSensitiveFile) ContentSha1() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentSha1",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLocalSensitiveFile) ContentSha256() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentSha256",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLocalSensitiveFile) ContentSha512() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contentSha512",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLocalSensitiveFile) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -149,7 +215,7 @@ func (j *jsiiProxy_DataLocalFile) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) DependsOn() *[]*string {
+func (j *jsiiProxy_DataLocalSensitiveFile) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -159,7 +225,7 @@ func (j *jsiiProxy_DataLocalFile) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) Filename() *string {
+func (j *jsiiProxy_DataLocalSensitiveFile) Filename() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -169,7 +235,7 @@ func (j *jsiiProxy_DataLocalFile) Filename() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) FilenameInput() *string {
+func (j *jsiiProxy_DataLocalSensitiveFile) FilenameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -179,7 +245,7 @@ func (j *jsiiProxy_DataLocalFile) FilenameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_DataLocalSensitiveFile) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -189,7 +255,7 @@ func (j *jsiiProxy_DataLocalFile) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) Fqn() *string {
+func (j *jsiiProxy_DataLocalSensitiveFile) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -199,7 +265,7 @@ func (j *jsiiProxy_DataLocalFile) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) FriendlyUniqueId() *string {
+func (j *jsiiProxy_DataLocalSensitiveFile) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -209,7 +275,7 @@ func (j *jsiiProxy_DataLocalFile) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) Id() *string {
+func (j *jsiiProxy_DataLocalSensitiveFile) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -219,7 +285,7 @@ func (j *jsiiProxy_DataLocalFile) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_DataLocalSensitiveFile) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -229,7 +295,7 @@ func (j *jsiiProxy_DataLocalFile) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) Node() constructs.Node {
+func (j *jsiiProxy_DataLocalSensitiveFile) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -239,7 +305,7 @@ func (j *jsiiProxy_DataLocalFile) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_DataLocalSensitiveFile) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -249,7 +315,7 @@ func (j *jsiiProxy_DataLocalFile) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) RawOverrides() interface{} {
+func (j *jsiiProxy_DataLocalSensitiveFile) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -259,7 +325,7 @@ func (j *jsiiProxy_DataLocalFile) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_DataLocalSensitiveFile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -269,7 +335,7 @@ func (j *jsiiProxy_DataLocalFile) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_DataLocalSensitiveFile) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -279,7 +345,7 @@ func (j *jsiiProxy_DataLocalFile) TerraformMetaArguments() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) TerraformResourceType() *string {
+func (j *jsiiProxy_DataLocalSensitiveFile) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -290,17 +356,17 @@ func (j *jsiiProxy_DataLocalFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/local/d/file local_file} Data Source.
-func NewDataLocalFile(scope constructs.Construct, id *string, config *DataLocalFileConfig) DataLocalFile {
+// Create a new {@link https://www.terraform.io/docs/providers/local/d/sensitive_file local_sensitive_file} Data Source.
+func NewDataLocalSensitiveFile(scope constructs.Construct, id *string, config *DataLocalSensitiveFileConfig) DataLocalSensitiveFile {
 	_init_.Initialize()
 
-	if err := validateNewDataLocalFileParameters(scope, id, config); err != nil {
+	if err := validateNewDataLocalSensitiveFileParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataLocalFile{}
+	j := jsiiProxy_DataLocalSensitiveFile{}
 
 	_jsii_.Create(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -308,18 +374,18 @@ func NewDataLocalFile(scope constructs.Construct, id *string, config *DataLocalF
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/local/d/file local_file} Data Source.
-func NewDataLocalFile_Override(d DataLocalFile, scope constructs.Construct, id *string, config *DataLocalFileConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/local/d/sensitive_file local_sensitive_file} Data Source.
+func NewDataLocalSensitiveFile_Override(d DataLocalSensitiveFile, scope constructs.Construct, id *string, config *DataLocalSensitiveFileConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile",
 		[]interface{}{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataLocalFile)SetCount(val *float64) {
+func (j *jsiiProxy_DataLocalSensitiveFile)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -327,7 +393,7 @@ func (j *jsiiProxy_DataLocalFile)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalFile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataLocalSensitiveFile)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -335,7 +401,7 @@ func (j *jsiiProxy_DataLocalFile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalFile)SetFilename(val *string) {
+func (j *jsiiProxy_DataLocalSensitiveFile)SetFilename(val *string) {
 	if err := j.validateSetFilenameParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,7 +412,7 @@ func (j *jsiiProxy_DataLocalFile)SetFilename(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalFile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataLocalSensitiveFile)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -354,7 +420,7 @@ func (j *jsiiProxy_DataLocalFile)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataLocalFile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataLocalSensitiveFile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,7 +431,7 @@ func (j *jsiiProxy_DataLocalFile)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_DataLocalFile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataLocalSensitiveFile)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -390,16 +456,16 @@ func (j *jsiiProxy_DataLocalFile)SetProvider(val cdktf.TerraformProvider) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataLocalFile_IsConstruct(x interface{}) *bool {
+func DataLocalSensitiveFile_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataLocalFile_IsConstructParameters(x); err != nil {
+	if err := validateDataLocalSensitiveFile_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -409,16 +475,16 @@ func DataLocalFile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataLocalFile_IsTerraformDataSource(x interface{}) *bool {
+func DataLocalSensitiveFile_IsTerraformDataSource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataLocalFile_IsTerraformDataSourceParameters(x); err != nil {
+	if err := validateDataLocalSensitiveFile_IsTerraformDataSourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -428,16 +494,16 @@ func DataLocalFile_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataLocalFile_IsTerraformElement(x interface{}) *bool {
+func DataLocalSensitiveFile_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataLocalFile_IsTerraformElementParameters(x); err != nil {
+	if err := validateDataLocalSensitiveFile_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -446,18 +512,18 @@ func DataLocalFile_IsTerraformElement(x interface{}) *bool {
 	return returns
 }
 
-func DataLocalFile_TfResourceType() *string {
+func DataLocalSensitiveFile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-local.dataLocalFile.DataLocalFile",
+		"@cdktf/provider-local.dataLocalSensitiveFile.DataLocalSensitiveFile",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataLocalSensitiveFile) AddOverride(path *string, value interface{}) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
@@ -468,7 +534,7 @@ func (d *jsiiProxy_DataLocalFile) AddOverride(path *string, value interface{}) {
 	)
 }
 
-func (d *jsiiProxy_DataLocalFile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataLocalSensitiveFile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -484,7 +550,7 @@ func (d *jsiiProxy_DataLocalFile) GetAnyMapAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataLocalSensitiveFile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -500,7 +566,7 @@ func (d *jsiiProxy_DataLocalFile) GetBooleanAttribute(terraformAttribute *string
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataLocalSensitiveFile) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -516,7 +582,7 @@ func (d *jsiiProxy_DataLocalFile) GetBooleanMapAttribute(terraformAttribute *str
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataLocalSensitiveFile) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -532,7 +598,7 @@ func (d *jsiiProxy_DataLocalFile) GetListAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataLocalSensitiveFile) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -548,7 +614,7 @@ func (d *jsiiProxy_DataLocalFile) GetNumberAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataLocalSensitiveFile) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -564,7 +630,7 @@ func (d *jsiiProxy_DataLocalFile) GetNumberListAttribute(terraformAttribute *str
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataLocalSensitiveFile) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -580,7 +646,7 @@ func (d *jsiiProxy_DataLocalFile) GetNumberMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataLocalSensitiveFile) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -596,7 +662,7 @@ func (d *jsiiProxy_DataLocalFile) GetStringAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataLocalSensitiveFile) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -612,7 +678,7 @@ func (d *jsiiProxy_DataLocalFile) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataLocalSensitiveFile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -628,7 +694,7 @@ func (d *jsiiProxy_DataLocalFile) InterpolationForAttribute(terraformAttribute *
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) OverrideLogicalId(newLogicalId *string) {
+func (d *jsiiProxy_DataLocalSensitiveFile) OverrideLogicalId(newLogicalId *string) {
 	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
@@ -639,7 +705,7 @@ func (d *jsiiProxy_DataLocalFile) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (d *jsiiProxy_DataLocalFile) ResetOverrideLogicalId() {
+func (d *jsiiProxy_DataLocalSensitiveFile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
@@ -647,7 +713,7 @@ func (d *jsiiProxy_DataLocalFile) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataLocalFile) SynthesizeAttributes() *map[string]interface{} {
+func (d *jsiiProxy_DataLocalSensitiveFile) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -660,7 +726,7 @@ func (d *jsiiProxy_DataLocalFile) SynthesizeAttributes() *map[string]interface{}
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) ToMetadata() interface{} {
+func (d *jsiiProxy_DataLocalSensitiveFile) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
@@ -673,7 +739,7 @@ func (d *jsiiProxy_DataLocalFile) ToMetadata() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) ToString() *string {
+func (d *jsiiProxy_DataLocalSensitiveFile) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -686,7 +752,7 @@ func (d *jsiiProxy_DataLocalFile) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataLocalFile) ToTerraform() interface{} {
+func (d *jsiiProxy_DataLocalSensitiveFile) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
