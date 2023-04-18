@@ -8,7 +8,7 @@ type DataLocalSensitiveFileConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -23,7 +23,7 @@ type DataLocalSensitiveFileConfig struct {
 	//
 	// The data source will return an error if the file does not exist.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/local/d/sensitive_file#filename DataLocalSensitiveFile#filename}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/data-sources/sensitive_file#filename DataLocalSensitiveFile#filename}
 	Filename *string `field:"required" json:"filename" yaml:"filename"`
 }
 

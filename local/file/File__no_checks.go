@@ -76,6 +76,10 @@ func (j *jsiiProxy_File) validateSetContentBase64Parameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_File) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_File) validateSetDirectoryPermissionParameters(val *string) error {
 	return nil
 }

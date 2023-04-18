@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-local-go/local/v5/provider/internal"
+	"github.com/cdktf/cdktf-provider-local-go/local/v6/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/local local}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs local}.
 type LocalProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -180,7 +180,7 @@ func (j *jsiiProxy_LocalProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/local local} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs local} Resource.
 func NewLocalProvider(scope constructs.Construct, id *string, config *LocalProviderConfig) LocalProvider {
 	_init_.Initialize()
 
@@ -198,7 +198,7 @@ func NewLocalProvider(scope constructs.Construct, id *string, config *LocalProvi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/local local} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs local} Resource.
 func NewLocalProvider_Override(l LocalProvider, scope constructs.Construct, id *string, config *LocalProviderConfig) {
 	_init_.Initialize()
 

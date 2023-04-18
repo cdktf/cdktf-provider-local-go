@@ -64,6 +64,10 @@ func validateDataLocalFile_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataLocalFile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataLocalFile) validateSetFilenameParameters(val *string) error {
 	return nil
 }

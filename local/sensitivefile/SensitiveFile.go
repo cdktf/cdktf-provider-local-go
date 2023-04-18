@@ -2,14 +2,14 @@ package sensitivefile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-local-go/local/v5/sensitivefile/internal"
+	"github.com/cdktf/cdktf-provider-local-go/local/v6/sensitivefile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/local/r/sensitive_file local_sensitive_file}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file local_sensitive_file}.
 type SensitiveFile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,9 +33,9 @@ type SensitiveFile interface {
 	ContentSha256() *string
 	ContentSha512() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -261,8 +261,8 @@ func (j *jsiiProxy_SensitiveFile) ContentSha512() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SensitiveFile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SensitiveFile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -482,7 +482,7 @@ func (j *jsiiProxy_SensitiveFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/local/r/sensitive_file local_sensitive_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file local_sensitive_file} Resource.
 func NewSensitiveFile(scope constructs.Construct, id *string, config *SensitiveFileConfig) SensitiveFile {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewSensitiveFile(scope constructs.Construct, id *string, config *SensitiveF
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/local/r/sensitive_file local_sensitive_file} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/resources/sensitive_file local_sensitive_file} Resource.
 func NewSensitiveFile_Override(s SensitiveFile, scope constructs.Construct, id *string, config *SensitiveFileConfig) {
 	_init_.Initialize()
 
@@ -544,7 +544,10 @@ func (j *jsiiProxy_SensitiveFile)SetContentBase64(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SensitiveFile)SetCount(val *float64) {
+func (j *jsiiProxy_SensitiveFile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

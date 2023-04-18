@@ -2,14 +2,14 @@ package datalocalfile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-local-go/local/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-local-go/local/v5/datalocalfile/internal"
+	"github.com/cdktf/cdktf-provider-local-go/local/v6/datalocalfile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/local/d/file local_file}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/data-sources/file local_file}.
 type DataLocalFile interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -25,9 +25,9 @@ type DataLocalFile interface {
 	ContentSha256() *string
 	ContentSha512() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -205,8 +205,8 @@ func (j *jsiiProxy_DataLocalFile) ContentSha512() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataLocalFile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataLocalFile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DataLocalFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/local/d/file local_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/data-sources/file local_file} Data Source.
 func NewDataLocalFile(scope constructs.Construct, id *string, config *DataLocalFileConfig) DataLocalFile {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDataLocalFile(scope constructs.Construct, id *string, config *DataLocalF
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/local/d/file local_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.4.0/docs/data-sources/file local_file} Data Source.
 func NewDataLocalFile_Override(d DataLocalFile, scope constructs.Construct, id *string, config *DataLocalFileConfig) {
 	_init_.Initialize()
 
@@ -385,7 +385,10 @@ func NewDataLocalFile_Override(d DataLocalFile, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_DataLocalFile)SetCount(val *float64) {
+func (j *jsiiProxy_DataLocalFile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

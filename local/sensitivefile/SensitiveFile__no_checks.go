@@ -76,6 +76,10 @@ func (j *jsiiProxy_SensitiveFile) validateSetContentBase64Parameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_SensitiveFile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SensitiveFile) validateSetDirectoryPermissionParameters(val *string) error {
 	return nil
 }
