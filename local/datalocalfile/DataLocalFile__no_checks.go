@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataLocalFile) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func validateDataLocalFile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataLocalFile_IsConstructParameters(x interface{}) error {
 	return nil
 }
