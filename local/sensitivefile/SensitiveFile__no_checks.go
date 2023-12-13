@@ -59,7 +59,15 @@ func (s *jsiiProxy_SensitiveFile) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SensitiveFile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SensitiveFile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SensitiveFile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
