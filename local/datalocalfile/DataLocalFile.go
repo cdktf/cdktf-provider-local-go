@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/data-sources/file local_file}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/file local_file}.
 type DataLocalFile interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataLocalFile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/data-sources/file local_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/file local_file} Data Source.
 func NewDataLocalFile(scope constructs.Construct, id *string, config *DataLocalFileConfig) DataLocalFile {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataLocalFile(scope constructs.Construct, id *string, config *DataLocalF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/data-sources/file local_file} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/file local_file} Data Source.
 func NewDataLocalFile_Override(d DataLocalFile, scope constructs.Construct, id *string, config *DataLocalFileConfig) {
 	_init_.Initialize()
 

@@ -26,7 +26,7 @@ type DataLocalSensitiveFileConfig struct {
 	//
 	// The data source will return an error if the file does not exist.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.4.1/docs/data-sources/sensitive_file#filename DataLocalSensitiveFile#filename}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs/data-sources/sensitive_file#filename DataLocalSensitiveFile#filename}
 	Filename *string `field:"required" json:"filename" yaml:"filename"`
 }
 
