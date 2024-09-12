@@ -7,7 +7,7 @@ package provider
 type LocalProviderConfig struct {
 	// Alias name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.1/docs#alias LocalProvider#alias}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/local/2.5.2/docs#alias LocalProvider#alias}
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
 }
 
